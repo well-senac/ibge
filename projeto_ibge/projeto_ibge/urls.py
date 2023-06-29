@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core import views # Do app core, traga as views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Criar uma página que exibe todas as pessoas
+    path('pessoas/', views.lista_pessoas) # Quando o usuário acessar a url, chame o python
 ]
