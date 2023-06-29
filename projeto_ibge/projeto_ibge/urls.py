@@ -21,5 +21,6 @@ from core import views # Do app core, traga as views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Criar uma página que exibe todas as pessoas
-    path('pessoas/', views.lista_pessoas) # Quando o usuário acessar a url, chame o python
+    path('pessoas/', views.lista_pessoas), # Quando o usuário acessar a url, chame o python
+    path('cadastrar_pessoa/', views.cadastrar_pessoa, name='cadastrar_pessoa')
 ]
